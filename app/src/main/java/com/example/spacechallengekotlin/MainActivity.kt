@@ -6,8 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
 import androidx.annotation.RequiresApi
-/*import com.example.spacechallengekotlin.rocket.U1
-import com.example.spacechallengekotlin.rocket.U2*/
 import java.util.ArrayList
 
 class MainActivity : AppCompatActivity() {
@@ -31,13 +29,13 @@ class MainActivity : AppCompatActivity() {
         val u1Phase1Budget = "U1 budget = "
         val u1Phase2Budget = "\nU2 budget = "
 
-        val U1_budget = simulation.runSimulation(u1Phase1) +
+        val u1Budget = simulation.runSimulation(u1Phase1) +
                 simulation.runSimulation(u1Phase2)
-        val U2_budget = simulation.runSimulation(u2Phase1) +
+        val u2Budget = simulation.runSimulation(u2Phase1) +
                 simulation.runSimulation(u2Phase2)
 
-        result.text = u1Phase1Budget.plus(U1_budget)
-            .plus(u1Phase2Budget).plus(U2_budget)
+        result.text = u1Phase1Budget.plus(u1Budget)
+            .plus(u1Phase2Budget).plus(u2Budget)
     }
 
     companion object {

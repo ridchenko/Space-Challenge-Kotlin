@@ -3,9 +3,6 @@ package com.example.spacechallengekotlin
 import android.content.Context
 import android.os.Build
 import androidx.annotation.RequiresApi
-/*import com.example.spacechallengekotlin.rocket.U1
-import com.example.spacechallengekotlin.rocket.U2
-import com.example.spacechallengekotlin.rocket.Rocket*/
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
