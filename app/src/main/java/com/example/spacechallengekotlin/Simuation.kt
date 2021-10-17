@@ -21,9 +21,7 @@ class Simulation(private val mContext: Context) {
 
                     for (line: String in br.lines()) {
                         val ln = line.split("=").toTypedArray()
-                        val item = Item()
-                        item.name = ln[0]
-                        item.weight = ln[1].toInt()
+                        val item = Item(ln[0], ln[1].toInt())
                         items.add(item)
                     }
                 }
